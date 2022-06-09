@@ -49,7 +49,16 @@
 <section class="banner">
 <div class="container">
             <h1 class="section_title">Эффективные решения для вашего бизнеса</h1>
-            <button class="button" type="button">Заказать услугу</button>
+            <button data-modal-open class="button" type="button" >Заказать услугу</button>
+
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+<p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum tempore rem quibusdam eos officiis in repellat! Iure libero tenetur exercitationem quod. Impedit aliquam fugiat illum, porro sint nulla fuga corrupti!
+</p>
+  <button data-modal-close>Закрыть</button>
+    </div>
+    </div>
 </div>
 </section>
 <!--Advantages-->
@@ -94,9 +103,22 @@
             <h2 class="second_title">Чем мы занимаемся</h2>
 
             <ul class="services list">
-                <li><img src="./images/what_we_do_1.jpg" alt="Услуга 1" width="370" height="294"/></li>
-                <li><img src="./images/what_we_do_2.jpg" alt="Услуга 2" width="370" height="294"/></li>
-                <li><img src="./images/what_we_do_3.jpg" alt="Услуга 3" width="370" height="294"/></li>
+               
+                <li class="services-items">
+                    <img src="./images/what_we_do_1.jpg" alt="Услуга 1" width="370" height="294"/>
+                    <div class="description-services">
+                        <p>Декстопные приложения</p>
+                    </div>
+                </li>
+               
+                <li class="services-items"><img src="./images/what_we_do_2.jpg" alt="Услуга 2" width="370" height="294"/>
+                <div class="description-services"><p>Мобильные приложения</p></div>
+                </li>
+
+                <li class="services-items"><img src="./images/what_we_do_3.jpg" alt="Услуга 3" width="370" height="294"/>
+                <div class="description-services"><p>Дизайнерские решения</p></div>
+                 </li>
+
             </ul>
 </div>
         </section>
@@ -334,62 +356,65 @@
 <!-- Footer--> 
 <footer class="footer">
     <div class="container">
-    <div class="footer-container">
-        <div class="footer-adress-container">
-        <a href="./index.html" class="logo bottom">
-            <span class="logo_web">Web</span><span class="logo_studio_white">Studio</span>
-        </a>
-        <div class="footer-box">
-        <address>
-            <ul class="site-contacts list">
-                <li><a href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
-                        target="_blank" class="map">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li class="bottom-adress"><a href="mailto:info@devstudio.com" class="link contacts">info@devstudio.com
-                </li>
-                <li class="bottom-adress"><a href="tel:+380961111111" class="link contacts">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+        <div class="footer-container">
+            <div class="footer-adress-container">
+                <a href="./index.html" class="logo bottom">
+                    <span class="logo_web">Web</span><span class="logo_studio_white">Studio</span>
+                </a>
+                <div class="footer-box">
+                    <address>
+                        <ul class="site-contacts list">
+                            <li><a href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                                    target="_blank" class="map">г. Киев, пр-т Леси Украинки, 26</a></li>
+                            <li class="bottom-adress"><a href="mailto:info@devstudio.com"
+                                    class="link contacts">info@devstudio.com</a>
+                            </li>
+                            <li class="bottom-adress"><a href="tel:+380961111111" class="link contacts">+38 096 111 11
+                                    11</a></li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-social-media">
+                <p>Присоединяйтесь</p>
+                <ul class="team-social-media bottom">
+                    <li class="social-media-list-bottom">
+                        <a href="#" class="social-media-link-bottom">
+                            <svg class="social-media-svg-bottom" width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="social-media-list-bottom">
+                        <a href="#" class="social-media-link-bottom">
+                            <svg class="social-media-svg-bottom" width="20" height="16.25">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="social-media-list-bottom">
+                        <a href="#" class="social-media-link-bottom">
+                            <svg class="social-media-svg-bottom" width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="social-media-list-bottom">
+                        <a href="#" class="social-media-link-bottom">
+                            <svg class="social-media-svg-bottom" width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
         </div>
-</div>
-        <div class="footer-social-media">
-            <p>Присоединяйтесь</p>
-<ul class="team-social-media bottom">
-    <li class="social-media-list-bottom">
-        <a href="#" class="social-media-link-bottom">
-            <svg class="social-media-svg-bottom" width="20" height="20">
-                <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-        </a>
-    </li>
-
-    <li class="social-media-list-bottom">
-        <a href="#" class="social-media-link-bottom">
-            <svg class="social-media-svg-bottom" width="20" height="16.25">
-                <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-        </a>
-    </li>
-
-    <li class="social-media-list-bottom">
-        <a href="#" class="social-media-link-bottom">
-            <svg class="social-media-svg-bottom" width="20" height="20">
-                <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-        </a>
-    </li>
-
-    <li class="social-media-list-bottom">
-        <a href="#" class="social-media-link-bottom">
-            <svg class="social-media-svg-bottom" width="20" height="20">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
-        </a>
-    </li>
-
-</ul>
-</div>
-</div>
-</div>
+    </div>
 </footer>
+<script src="./js/modal.js"></script>
 </body>
 </html>
